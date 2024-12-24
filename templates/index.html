@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 거주 지역의 주거환경 만족도</title>
+    <style>
+        body {
+            font-family:Arial, sans_serif;
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse:collapse;
+            width: 80%;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align:center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .root_box {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-left: 110px;
+        }
+    </style>
+</head>
+<body>
+    <h1>현재 거주 지역의 주거환경 만족도</h1>
+    {{ table_html|safe }}
+
+    <div class="root_box">
+        <a href="/infra">
+            <button>그래프 보기</button>
+        </a>
+    
+        <a href="/traffic">
+            <button>그래프 보기</button>
+        </a>
+    
+        <a href="/crime">
+            <button>그래프 보기</button>
+        </a>
+    
+        <a href="/clean">
+            <button>그래프 보기</button>
+        </a>
+    
+        <a href="/green">
+            <button>그래프 보기</button>
+        </a>
+    
+        <a href="/culture">
+            <button>그래프 보기</button>
+        </a>
+    
+        <a href="/education">
+            <button>그래프 보기</button>
+        </a>
+        
+        <a href="/naver">
+            <button>그래프 보기</button>
+        </a>
+    </div>
+
+
+</body>
+</html>

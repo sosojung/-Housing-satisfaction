@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주거지역 대중교통 만족도</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #graph-container {
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>주거지역에 대한 대중교통 만족도 시각화</h1>
+    <div id="graph-container">
+        {{ graph_html|safe }}
+    </div>
+    <a href="/">
+        <button>돌아가기</button>
+    </a>
+</body>
+</html>
